@@ -2,36 +2,36 @@ import java.util.ArrayList;
 
 public class Project {
 	
-	private String projecttitle;
+	private String projectTitle;
 	
-	public ArrayList<Project>tasklist = new ArrayList<Project>();
+	public ArrayList<Project>TaskRegister = new ArrayList<Project>();
 	
+	
+	public Project(String projectTitle) {
+		this.projectTitle = projectTitle;
+	}
+	
+	public String getProjecttitle() {
+		return projectTitle;
+	}
 
-      public Project(String projecttitle) {
-		this.projecttitle=projecttitle;}
-	
+	public void setProjecttitle(String projectTitle) {
+		this.projectTitle = projectTitle;
+	}
 
-	  public String getProjecttitle() {
-		return projecttitle;}
+	public ArrayList<Project> getTaskRegister() {
+		return TaskRegister;
+	}
 
-	  public void setProjecttitle(String projecttitle) {
-		this.projecttitle = projecttitle;}
-	
-	
-      public String toString() {
+	public void setTaskRegister(ArrayList<Project> TaskRegister) {
+		this.TaskRegister = TaskRegister;
+	}
+
+    public String toString() {
     	
-    	return  "Project Title: " + this.getProjecttitle();
+    	return  "Project Title: " + this.getProjecttitle() + " " + "TaskRegister: " + this.getTaskRegister();
     	
-    }
-
-      public ArrayList<Project> getTasklist() {
-	   return tasklist;}
-
-
-      public void setTasklist(ArrayList<Project> tasklist) {
-	  this.tasklist = tasklist;
-  }
-	
+      }	
 }
 
 
