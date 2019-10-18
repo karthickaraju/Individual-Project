@@ -9,6 +9,7 @@ public class Task {
 	private Date duedate;
 	private String status;
 	private String project;
+	private String dateInStr;
 	
 	public Task() {
 		
@@ -16,10 +17,17 @@ public class Task {
 
 	public Task(String tasktitle, Date duedate, String project) {
 		this.taskid = ++taskIdCounter;
-		this.status = "Start";
+		this.status = "Not Done";
 		this.tasktitle = tasktitle;
 		this.project = project;
 		this.duedate = duedate;
+	}
+	
+	public Task(String tasktitle,String date,String status,String project) {
+		this.tasktitle = tasktitle;
+		this.dateInStr = date;
+		this.status = status;
+		this.project = project;
 	}
 
 	public String getStatus() {
